@@ -1,0 +1,26 @@
+.carousel {
+  position: relative;
+}
+.carousel-wrapper {
+  display: flex;
+  margin: 2rem 0;
+  width: max-content;
+  transition: 0.75s ease all;
+}
+
+.carousel-next-button,
+.carousel-prev-button {
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.carousel-next-button{
+  right: 0;
+}
+.carousel-prev-button {
+  left: 0;
+}

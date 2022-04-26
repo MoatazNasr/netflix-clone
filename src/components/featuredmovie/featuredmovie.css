@@ -1,0 +1,53 @@
+
+.featuredmovie_image{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover; 
+    z-index: -1;   
+    position: relative;
+}
+
+.featuredmovie_data{
+    color:white;
+    position: absolute;
+    top: 60%;
+    margin-left:calc(2rem + 12px);
+}
+.featuredmovie_data_description{
+    width: 55ch;
+}
+.featuredmovie_data_buttons{
+    margin-top: 1rem;
+    display: flex;
+}
+.featuredmovie_data_buttons button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 1.4rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 500;
+    transition: 0.5s all;
+}
+.featuredmovie_data_buttons button span{
+    margin-left: 0.1rem;
+}
+
+.featuredmovie_data_buttons_playBTN{
+    background-color: #ffffffd7;
+    color:var(clr-main);
+}
+.featuredmovie_data_buttons_playBTN:hover{
+    background-color: #ffffff;
+}
+.featuredmovie_data_buttons_infoBTN{
+    background-color: rgb(136, 136, 136);
+
+    color:white;
+    margin-left: 0.75rem;
+}
+
+.featuredmovie_data_buttons_infoBTN:hover{
+    background-color: rgb(160, 160, 160);
+}

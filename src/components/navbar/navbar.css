@@ -1,0 +1,30 @@
+.navbar{
+    color:white;
+    position: fixed;
+    width: 100%;
+    display: grid;
+    background-color: transparent;
+    grid-template-columns:5fr 0.8fr;
+    z-index: 10000;
+}
+.navbar_logo{
+    width:120px;
+    aspect-ratio: 1;
+    margin: 0 1rem;
+}
+.navbar_ul{
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+.navbar_li{
+    margin:0 0.75rem;
+}
+
+.nav-background{
+    background-color: var(--clr-main);
+}
+
+@media  (max-width: 768px) {
+    
+}
