@@ -1,0 +1,56 @@
+.signin {
+  background-image: url("../../../public/assets/netflix1.webp");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: white; 
+}
+.signin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -1rem 3rem 2rem 3rem;
+}
+.signin-logo {
+  width: 200px;
+  aspect-ratio: 1;
+  margin-bottom: 4rem;
+}
+
+.signin-content {
+  margin: 0 auto;
+  width: max-content;
+  background-color: black;
+  padding:1.75rem;
+  border-radius: 0.25rem;
+}
+.signin-content > p > a{
+font-weight: 700;
+}
+.signin-content h2 {
+  font-size: var(--fs-600);
+  font-weight: 600;
+}
+.signin-form {
+  display: grid;
+  margin: 0.75rem 0;
+}
+.signin-form input {
+  color: white;
+  width: max(24vw, 264px);
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  background: rgb(106, 104, 104);
+  border-radius: 0.25rem;
+}
+.signin-form button {
+  margin: 0.75rem 0;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem 2rem;
+  border-radius: 0.25rem;
+}

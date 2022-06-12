@@ -1,0 +1,123 @@
+.register1 {
+  width: 100vw;
+  height: 102vh;
+  background: url("https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg") no-repeat;
+  background-size: cover;
+}
+.register1-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -1rem 3rem 2rem 3rem;
+}
+.register1-logo {
+  width: 200px;
+  aspect-ratio: 1;
+}
+
+.register1-link {
+  height: max-content;
+  background-color: red;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1.25rem;
+}
+.register1-content {
+  text-align: center;
+}
+.register1-content-title {
+  font-size: var(--fs-700);
+  font-weight: 700;
+}
+.register1-content-subtitle {
+  font-size: var(--fs-500);
+  font-weight: 500;
+  margin: 1rem  0 2rem 0;
+}
+.register1-content-email {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.register1-content-email input {
+  width: max(25vw, 300px);
+  aspect-ratio: 9/1.01;
+  padding: 0 1rem;
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
+}
+.register1-content-email button {
+  border-radius: 0.25rem;
+  padding: 0.75rem 2rem;
+  color: white;
+  border: none;
+  background-color: red;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .register1-header,.register1-content-email {
+    flex-direction: column;
+    align-items: center;
+  }
+  .register1-content-email button{
+    margin-top: 1rem;
+  }
+}
+/* register 2 page  */
+
+
+.register2 {
+ background: white;
+ height: 110vh;
+ width: 100vw;
+}
+
+.register2-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -2rem 3rem 2rem 3rem;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.register2-logo {
+  width: max(11vw, 150px);
+  aspect-ratio: 1;
+}
+
+.register2-btn{
+  color: #E50914;
+  background: none;
+}
+
+.register2-content-form{
+  margin-top: 5rem;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  color: black;
+}
+  
+.register2-content-form input {
+  width: max(25vw, 300px);
+  aspect-ratio: 9/1.01;
+  padding: 0 1rem;
+  outline: none;
+  border-color:rgba(0, 0, 0, 0.3);
+  border-radius: 0.25rem; 
+}
+.register2-content-form input[type="file"]{
+  padding:0;
+}
+.register2-content-form input[type="file"]::-webkit-file-upload-button {
+  width: 200px;
+  border-color:rgba(0, 0, 0, 0.3);
+  background: white;
+  padding:.25rem 1rem;
+  border-radius: 0.25rem; 
+}
+.register2-content-form button {
+  background:  #E50914;
+  display: block;
+  color: white;
+}

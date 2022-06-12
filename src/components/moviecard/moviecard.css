@@ -1,44 +1,29 @@
-.card {
-  background: black;
-  width: 300px;
-  text-align: left;
-  position: absolute;
-  left: -6px;
-  top: -160%;
-  z-index: 2;
+.carousel-item {
+  margin: 0 0.35rem;
+  border-radius: 0.5rem;
+  border: none;
+  position: relative;
+  max-width: 266.76px;
+  justify-self: center;
+  color: white;
 }
-.card-header img {
+.carousel-item img {
   object-fit: cover;
+  width: 266.76px;
+  border-radius: 0.5rem;
+  height: 400px;
 }
-.card-body {
-  font-size: var(--fs-200);
-  padding: 0 1rem;
+
+.carousel-item .movie-info {
+  position: absolute;
+  top: 47%;
+  left: 25.5%;
+  display: none;
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
 }
-.card-body-buttons {
-  cursor: pointer;
-  margin-top: 1rem;
-  display: flex;
-  font-size: var(--fs-500);
+.carousel-item:hover .movie-info {
+  display: block;
 }
-.card-body-buttons span{
-  margin-right: 0.3rem;
-}
-.card-body-desc {
-  margin-bottom: 0.5rem;
-}
-.card-body-desc-date span {
-  color: rgb(146, 144, 144);
-  display: inline-block;
-  margin-right:0.5rem;
-}
-.card-body-desc-date span:nth-of-type(3) {
-  border: 1px solid gray;
-  padding: 0.05rem 0.2rem;
-}
-.card-body-desc-date {
-  margin: 0.5rem 0;
-}
-.card-footer {
-  font-size: var(--fs-300);
-  padding: 0 1rem;
-}
+

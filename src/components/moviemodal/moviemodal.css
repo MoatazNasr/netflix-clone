@@ -1,0 +1,87 @@
+.card {
+  background: rgba(0, 0, 0, 0.7);
+  position:fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  overflow-x: hidden;
+}
+.card-content {
+  text-align: center;
+  position: relative;
+  max-width: 600px;
+  background: black;
+  margin: 0 auto;
+}
+.card-header img {
+  object-fit: cover;
+}
+.card-header .close-button {
+  position: absolute;
+  background: none;
+  color: white;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+.card-body {
+  padding: 0 1rem;
+}
+.card-body .movie-buttons {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.card-body .movie-buttons a {
+  display: flex;
+  align-items: center;
+  color: red;
+}
+.card-body .movie-buttons button {
+  background: none;
+  color: white;
+  width: max-content;
+  color: red;
+}
+.card-body .movie-title {
+  color: white;
+  margin:1rem 0 0.5rem 0;
+  font-size: var(--fs-600);
+  font-weight: 500;
+}
+.card-body .movie-tagline {
+  font-size: var(--fs-500);
+  font-weight: 300;
+  padding: 0 0.3rem;
+}
+.card-body .movie-desc {
+  width: 50ch;
+  margin: 0.5rem auto;
+}
+.card-footer {
+  padding-bottom: 1rem;
+}
+.card-footer .movie-runtime-rating {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+}
+.card-footer .movie-runtime-rating span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-footer .movie-runtime-rating span svg{
+  margin:0 0 0.4rem 0.2rem;
+}
+.card-footer .genre-item {
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 768px){
+  .card-body .movie-desc {
+    width: 35ch;
+  }
+}

@@ -140,3 +140,76 @@ select {
   background-color: red;
   border-radius: 0.2rem;
 }
+
+/* links */
+.links {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* status-message */
+.status-message {
+  position: fixed;
+  bottom: 2rem;
+  z-index: 999999;
+  color: black;
+  padding: 2rem;
+  background: white;
+  font-size: var(--fs-400);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  display: grid;
+  place-content: center;
+}
+.status-message-show {
+  right: 0.25rem;
+  animation: statusMessageShow 0.5s ease-in-out;
+}
+.status-message-hide {
+  right: -20rem;
+  animation: statusMessageHide 0.5s ease-in-out;
+}
+.successful {
+  border-left: 6px solid rgb(13, 176, 13);
+}
+.error {
+  border-left: 6px solid rgb(176, 13, 13);
+}
+
+@keyframes statusMessageShow {
+  0% {
+    right: -20rem;
+  }
+  100% {
+    right: 0.25rem;
+  }
+}
+
+@keyframes statusMessageHide {
+  0% {
+    right: 0.25rem;
+  }
+  100% {
+    right: -20rem;
+  }
+}
+
+.status-message button {
+  background: none;
+  position: absolute;
+  top: -0.5rem;
+  right: -1rem;
+}
+/* title */
+.title {
+  margin-left: calc(1rem + 10.4px);
+  position: relative;
+  top: 200px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .mylist-title {
+    text-align: center;
+  }
+}

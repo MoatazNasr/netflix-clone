@@ -1,0 +1,68 @@
+.settings {
+  background: white !important;
+  height: 100vh;
+  color: black;
+}
+.settings a {
+  color: black;
+  position: absolute;
+  left: 2rem;
+  top: 2rem ;
+  display: flex;
+  align-items: center;
+}
+
+.section-content {
+  position: relative;
+  top: 4rem ;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: max-content;
+}
+.section-content-select {
+  padding: 0;
+  height: 100%;
+  border-right: 1px solid black;
+}
+.section-content-select li:nth-of-type(1) {
+  margin: 1rem 0;
+  border-bottom: 1px solid black;
+}
+.section-content-select li button {
+  background: none;
+  border-radius: 0;
+}
+.section-content-select li button:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+.settings-form {
+  margin-top: 5rem;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  color: black;
+}
+
+.settings-form input {
+  width: max(25vw, 200px);
+  aspect-ratio: 9/1.01;
+  padding: 0.2rem 1rem;
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.25rem;
+}
+.settings-form input[type="file"] {
+  padding: 0;
+}
+.settings-form input[type="file"]::-webkit-file-upload-button {
+  width: 200px;
+  border-color: rgba(0, 0, 0, 0.3);
+  background: white;
+  padding: 0.25rem 1rem;
+  border-radius: 0.25rem;
+}
+.settings-form button {
+  background: #e50914;
+  display: block;
+  color: white;
+}
