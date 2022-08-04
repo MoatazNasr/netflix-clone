@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./GlobalStyles.css";
 import Home from "./containers/home/Home";
 import Video from "./containers/video/Video";
@@ -53,6 +53,7 @@ function App() {
       </Routes>
       {errorMessageState && (
         <div
+          title="status-message"
           className={`status-message error ${
             !closeStatusMessage ? "status-message-show" : "status-message-hide "
           }`}
@@ -65,6 +66,7 @@ function App() {
       )}
       {successfulMessageState && (
         <div
+          title="status-message"
           className={`status-message successful ${
             !closeStatusMessage ? "status-message-show" : "status-message-hide "
           }`}

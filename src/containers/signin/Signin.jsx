@@ -54,21 +54,23 @@ const Signin = () => {
           <input
             type="email"
             placeholder="Email"
+            aria-label='signin-email'
             required={true}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
             type="password"
             placeholder="Password"
+            aria-label='signin-password'
             required={true}
             minLength={8}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button type="submit">{loading ? "Loading..." : "Sign in"}</button>
+          <button type="submit" aria-label="signin-button">{loading ? "Loading..." : "Sign in"}</button>
         </form>
         <p className="fs-400">
           New to Netflix?{" "}
-          <NavLink className="links" to="/register">
+          <NavLink className="links" to="/register" aria-label="to-register">
             Sign up now.
           </NavLink>
         </p>

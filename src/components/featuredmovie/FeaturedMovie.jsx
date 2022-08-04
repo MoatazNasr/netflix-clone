@@ -1,9 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import "./featuredmovie.css";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import axios from "axios";
-import Video from "../../containers/video/Video";
 import { NavLink } from "react-router-dom";
 import { GlobalContext } from "../../context/Provider";
 import { setMovieOrTvID } from "../../context/actions/movie-tvActions";
@@ -56,6 +54,7 @@ const FeaturedMovie = () => {
               <button
                 className="featuredmovie_data_buttons_infoBTN"
                 onClick={() => setMovieOrTvID(movie.id, movieOrtvDispatch)}
+                aria-label='F-movie-info'
               >
                 <span>More Info</span>
               </button>

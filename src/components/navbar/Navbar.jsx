@@ -98,7 +98,7 @@ const Navbar = ({ setSearchInput }) => {
         <ul className="navbar_ul">
           <li className="navbar_li">
             {!searchBTN ? (
-              <button onClick={() => setSearchBTN(true)}>
+              <button onClick={() => setSearchBTN(true)} aria-label='search-button'>
                 <SearchIcon fontSize={`${width > 768 ? "medium" : "large"}`} />
                 <span>Search</span>
               </button>
@@ -110,6 +110,7 @@ const Navbar = ({ setSearchInput }) => {
                 <input
                   type="text"
                   className="search-input"
+                  aria-label='search-input'
                   onChange={(event) => setSearchInput(event.target.value)}
                 />
                 <button

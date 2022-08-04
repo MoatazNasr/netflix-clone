@@ -5,7 +5,7 @@ import { setMovieOrTvID } from "../../context/actions/movie-tvActions";
 const CarouselItem = ({ item }) => {
   const { movieOrtvDispatch, movieOrtvState } = useContext(GlobalContext);
   return (
-    <>
+    <div role='div-card'>
       <div className="carousel-item">
         <img
           src={
@@ -22,7 +22,7 @@ const CarouselItem = ({ item }) => {
           More Info
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

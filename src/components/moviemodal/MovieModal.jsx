@@ -29,7 +29,10 @@ const Card = ({query}) => {
       )
       .then((res) => {
         setMovie(res.data);
-      });
+      })
+      .catch(()=>{
+        
+      })
     wishlistState.movies.forEach((item) => {
       if (item.movieID == movieOrtvState.movieOrtvID) setInWishlist(true);
     });
@@ -40,7 +43,7 @@ const Card = ({query}) => {
     time = movie.runtime.toString().split("");
   }
   return (
-    <>
+    <div role='div-modal'>
       {movie && (
         <div className="card">
           <div className="card-content">
@@ -145,7 +148,7 @@ const Card = ({query}) => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

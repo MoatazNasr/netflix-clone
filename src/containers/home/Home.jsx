@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <Navbar setSearchInput={setSearchInput} />
-      <main className="home">
+      <main className="home" aria-label='home-main'>
         <h1 className="title">{searchInput && "Search Results"}</h1>
         {searchInput === "" ? (
           <>
@@ -45,7 +45,6 @@ const Home = () => {
         ) : (
           <SearchResults query={searchInput} />
         )}
-
         {movieOrtvState.movieOrtvID && <MovieModal query={searchInput} />}
       </main>
     </>

@@ -15,7 +15,7 @@ const Provider = ({ children }) => {
   });
   const [wishlistState, wishlistDispatch] = useReducer(wishlist, {
     userID: null,
-    wishlist: [],
+    movies: [],
   });
   const [movieOrtvState, movieOrtvDispatch] = useReducer(movieOrtv, {
     movieOrtv: "tv",

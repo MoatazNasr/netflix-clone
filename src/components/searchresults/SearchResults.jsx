@@ -14,10 +14,13 @@ const SearchResults = ({ query }) => {
       )
       .then((res) => {
         setSearchResults(res.data.results);
-      });
+      })
+      .catch(()=>{
+        
+      })
   }, [query,movieOrtvState]);
   return (
-    <section className="search-results">
+    <section className="search-results" aria-label='search-results' role='region'>
       {searchResults.length > 0 &&
         searchResults.map((item, index) => (
           <MovieCard item={item} key={index} />
