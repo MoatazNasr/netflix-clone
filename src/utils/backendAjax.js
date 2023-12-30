@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASEURL = "http://localhost:2000/api";
+const BASEURL = "https://netflix-backend-njej.onrender.com/api";
 
 export const publicRequest = axios.create({
   baseURL: BASEURL,
