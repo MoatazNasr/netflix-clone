@@ -66,9 +66,7 @@ const Navbar = ({ setSearchInput }) => {
       >
         <ul className="navbar_ul">
           <li className="navbar_li">
-            <img
-              src="/assets/Netflix_2015_logo.svg"
-              alt="logo"
+            <div
               className="navbar_logo"
             />
           </li>
