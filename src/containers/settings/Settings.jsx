@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./settings.css";
-import axios from "axios";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { NavLink } from "react-router-dom";
 import UserPassword from "../../components/userpassword/UserPassword";
