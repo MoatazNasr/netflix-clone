@@ -10,7 +10,7 @@ const wishlist = (state, action) => {
   } else if (action.type === REMOVE_FROM_WISHLIST) {
     return {
       ...state,
-      movies: state.movies.filter((item) => item.movieID != action.payload),
+      movies: state.movies.filter((item) => item.movieID !== action.payload),
     };
   } else if (action.type === REMOVE_WISHLIST) {
     return action.payload;
