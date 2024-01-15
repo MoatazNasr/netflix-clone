@@ -42,9 +42,11 @@ const Signin = () => {
   return (
     <section className="signin">
       <div className="signin-header">
-            <div
-              className="signin-logo"
-            />
+               <img
+          src="/assets/Netflix_2015_logo.svg"
+          alt="logo"
+          className="signin-logo"
+        />
       </div>
       <div className="signin-content">
         <h2 className="signin-form-title">Sign in</h2>
