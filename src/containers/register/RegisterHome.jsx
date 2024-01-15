@@ -61,7 +61,9 @@ const RegisterHome = () => {
       {!email ? (
         <>
           <header className="register1-header">
-            <div
+            <img
+              src="/assets/Netflix_2015_logo.svg"
+              alt="logo"
               className="register1-logo"
             />
             <NavLink to="/signin" className="links register1-link">
@@ -97,7 +99,9 @@ const RegisterHome = () => {
       ) : (
         <>
           <header className="register2-header">
-           <div
+            <img
+              src="/assets/Netflix_2015_logo.svg"
+              alt="logo"
               className="register1-logo"
             />
             <button className="register2-btn" onClick={() => setEmail()}>
